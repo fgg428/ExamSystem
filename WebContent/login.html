@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>登录界面</title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.body{
+				width: 100%;
+				height: 900px;
+				background-color: rgba(22,22,22,0.1);
+				margin: auto;
+				background-image: url(img/background.jpg);
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+				-moz-background-inline-policy: 100% 100%;
+			}
+			.title{
+				float: right;
+				margin-top: 100px;
+				margin-right: 20%;
+				margin-bottom: 10px;
+				font-size: 1.5em;
+			}
+			.login_body{
+				clear: right;
+				float: right;
+				margin-right: 11%;
+				margin-bottom: 20px;
+				color: white;
+				background-color: rgba(99,99,99,0.4);
+				text-align: left;
+			}
+			.login_body td{
+				width: 90px;
+				height: 60px;
+				font-size: 18px;
+			}
+			.login_body input{
+				font-size: 15px;
+				padding-top: 3px;
+				padding-bottom: 2px;	
+			}
+			.button{
+				text-align: center;
+			}
+			.button td input{
+				font-size: 20px; 
+				width: 100%; 
+				background-color: burlywood;
+				color:darkslategray;
+			}
+			.a1{
+				float: right;
+				color: greenyellow;
+				margin-right: 10px;
+				margin-bottom: 10px;
+				text-decoration: none;
+			}
+			.a2{
+				float: left;
+				margin-left: 10px;
+				text-decoration: none;
+				color: #000000;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="body">
+			<div class="title"><strong>在线考题系统</strong></div>
+			<div class="login_body">
+				<from action="" method="post">
+					<table>
+						<tr><td>用户名:</td><td><input type="text" name="userName" placeholder="请输入用户名"></td></tr>
+						<tr><td>密&emsp;码:</td><td><input type="password" name="password" placeholder="请输入密码"></td></tr>
+						<tr><td>普通用户<input type="radio" value="user" name="person" checked="checked"/></td><td>管理员<input type="radio" value="admin"name="person"/></td></tr>
+						<tr class="button"><td colspan="2"><input type="submit" value="登录"/><!--</td><td><input type="reset" value="   重置   "/></td>--></tr>
+					</table>
+				</from>
+				<div class="bottom"><a class="a1" href="register.html">立即注册</a><a class="a2" href="register.html">临时账户</a></div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>个人信息页面</title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			h1{
+				padding-top: 30px;
+				margin-bottom: 30px;
+			}
+			.main{
+				text-align: center;
+				margin: auto;
+				background-image: url(img/background_02.jpg);
+				width: 100%;
+				height: 1000px;
+			}
+			.infor_body{
+				text-align: center;
+				margin: auto;
+				width: 600px;
+				height: 250px;
+			}
+			.from table{
+				text-align: left;
+				margin: auto;
+				width: 100%;
+				height: 100%;
+			}
+			.password_update a{
+				float: right;
+				font-size: 18px;
+				color: red;
+				text-decoration: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="main">
+			<div><h1>个人信息页面</h1></div>
+			<div class="infor_body">
+				<from class="from">
+					<table border="1" cellpadding="0" cellspacing="0">
+						<tr>
+							<td>用户名：<span id="userName">Tomi</span></td>
+							<td>上传题数：<span id="sum">10</span></td>
+						</tr>
+						<tr>
+							<td>账户类型：<span id="type">普通用户</span></td>
+							<td>权限：<span id="P_type">队员</span></td>
+						</tr>
+						<tr>
+							<td>姓名：<span id="name">韩信</span></td>
+							<td>年龄：<span id="age">20</span></td>
+						</tr>
+						<tr>
+							<td>手机号码：<span id="phone">15623712943</span></td>
+							<td>身份证号：<span id="IDCard">445222199007044328</span></td>
+						</tr>
+						<tr>
+							<td>学校：<span id="school">社会大学</span></td>
+							<td>毕业时间：<span id="Enddate">2019.6.1</span></td>
+						</tr>
+					</table>
+				</from>
+				<div class="password_update"><a href="#">密码重置</a></div>
+			</div>
+		</div>
+	</body>
+</html>

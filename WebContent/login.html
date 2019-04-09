@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>登录界面</title>
+		<title>用户登录</title>
 		<style type="text/css">
 			*{
 				margin: 0;
@@ -16,7 +16,6 @@
 				background-image: url(img/background.jpg);
 				background-repeat: no-repeat;
 				background-size: 100% 100%;
-				-moz-background-inline-policy: 100% 100%;
 			}
 			.title{
 				float: right;
@@ -60,12 +59,12 @@
 				margin-bottom: 10px;
 				text-decoration: none;
 			}
-			.a2{
+			/*.a2{
 				float: left;
 				margin-left: 10px;
 				text-decoration: none;
 				color: #000000;
-			}
+			}*/
 		</style>
 	</head>
 	<body>
@@ -76,11 +75,20 @@
 					<table>
 						<tr><td>用户名:</td><td><input type="text" name="userName" placeholder="请输入用户名"></td></tr>
 						<tr><td>密&emsp;码:</td><td><input type="password" name="password" placeholder="请输入密码"></td></tr>
-						<tr><td>普通用户<input type="radio" value="user" name="person" checked="checked"/></td><td>管理员<input type="radio" value="admin"name="person"/></td></tr>
+						<!--<tr><td>普通用户<input type="radio" value="user" name="person" checked="checked"/></td><td>管理员<input type="radio" value="admin"name="person"/></td></tr>-->
+						<tr><td colspan="2">选择账户类型：
+							<select>
+								<option selected="selected">队员</option>
+								<option>队长</option>
+								<option>讲师</option>
+								<option>面试人员</option>
+								<option>临时账户</option>
+								<option>管理员</option>
+							</select></td></tr>
 						<tr class="button"><td colspan="2"><input type="submit" value="登录"/><!--</td><td><input type="reset" value="   重置   "/></td>--></tr>
 					</table>
 				</from>
-				<div class="bottom"><a class="a1" href="register.html">立即注册</a><a class="a2" href="register.html">临时账户</a></div>
+				<div class="bottom"><a class="a1" href="register.html">立即注册</a><!--<a class="a2" href="register.html">临时账户</a>--></div>
 			</div>
 		</div>
 	</body>

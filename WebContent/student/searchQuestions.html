@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>成绩查询</title>
+		<style type="text/css">
+			body{
+				width: 100%;
+				height: 100%;
+				background-image: url(../img/background_03.jpg);
+				background-size: 100% 100%;
+			}
+			.box{
+				width: 380px;
+				margin: 30px auto;
+				font-family: 'Microsoft YaHei';
+				font-size: 14px;
+				padding-bottom: 30px;
+			}
+			.box input{
+				width: 260px;
+				border: 1px solid #e2e2e2;
+				height: 30px;
+				float: left;
+				background-image: url(../img/search.png);
+				background-repeat: no-repeat;
+				background-size: 25px;
+				background-position:5px center;
+				padding:0 0 0 40px;
+			}
+			.search{
+				width: 78px;
+				height: 32px;
+				float: right;
+				background: black;
+				color: white;
+				text-align: center;
+				line-height: 32px;
+				cursor: pointer;
+			}
+			table{
+				width: 50%;
+				height: 100%;
+				font-size: 17px;
+				margin:0 auto;
+				text-align: center;
+			}
+			.update{
+				width: 100%;
+				height: 100%;
+				font-size: 17px;
+				padding: 3px;
+				color: #FFFFFF;
+			}
+			.update:hover{
+				color: #000000;
+			}
+			.last{
+				width: 40%;
+				margin-left: 35%;
+				margin-top: 20px;
+			}
+			.last a {
+				color: black;
+				display: block;
+				border: 1px solid black;
+				padding: 5px 10px;
+				margin-left: 15px;
+				float: left;
+				margin-top: 5px;
+				background-color: white;
+				cursor: pointer;
+				text-decoration: none;
+			}
+			
+			.last a:hover {
+				background-color: seagreen;
+			}	
+			
+		</style>
+	</head>
+	<body>
+		<div class="main">
+			<div class="box">
+				<input type="text" name="search" placeholder="请输入关键字">
+				<div class="search">搜索</div> 
+			</div>
+			<table border="1" cellpadding="10" cellspacing="0">
+				<tr><th>考题类型</th><th>题目</th><th>答案</th><th>状态</th><th>详情</th></tr>
+				<tr><td><span id="exameType">选择题</span></td><td><span>1+1=?</span></td><td><span id="exameType">2</span></td></td><td><span>未审核</span></td><td><input type="button" value="修改" class="update"></td></tr>
+			</table>
+			<div class="last"><a href="#">首页</a><a href="#">上一页 </a><a href="#">下一页</a><a href="#">尾页</a></div>
+		</div>
+	</body>
+</html>

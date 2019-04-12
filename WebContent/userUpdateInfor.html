@@ -33,6 +33,12 @@
 				width: 100%;
 				height: 100%;
 			}
+			.button{
+				margin-top: 20px;
+				width: 30%;
+				font-size: 20px;
+				color: black;
+			}
 			.password_update a{
 				float: right;
 				font-size: 18px;
@@ -54,10 +60,10 @@
 		<div class="main">
 			<div><h1>个人信息页面</h1></div>
 			<div class="infor_body">
-
+				<form action="" method="post">
 					<table border="1" cellpadding="0" cellspacing="0">
 						<tr>
-							<td>用户名：<span id="userName">Tomi</span></td>
+							<td>用户名：<input type="text" value="" name="userName"></td>
 							<td>上传题数：<span id="sum">10</span></td>
 						</tr>
 						<tr>
@@ -66,19 +72,19 @@
 						</tr>
 						<tr>
 							<td>姓名：<span id="name">韩信</span></td>
-							<td>年龄：<span id="age">20</span></td>
+							<td>年龄：<input type="text" value="" name="age"></td>
 						</tr>
 						<tr>
-							<td>手机号码：<span id="phone">15623712943</span></td>
-							<td>身份证号：<span id="IDCard">445222199007044328</span></td>
+							<td>手机号码：<input type="text" value="" name="phone"></td>
+							<td>身份证号：<input type="text" value="" name="IDCard"></td>
 						</tr>
 						<tr>
-							<td>学校：<span id="TeamName">队名</span></td>
-							<td>队名：<span id="Enddate">天天向上</span></td>
+							<td>学校：<input type="text" value="" name="school"></td>
+							<td>队名：<input type="text" value="" name="TeamName"></td>
 						</tr>
 					</table>
-				<div class="infor_update"><a href="userUpdateInfor.html">信息修改</a></div>
-				<div class="password_update"><a href="forget_password.html">密码重置</a></div>
+					<input type="submit" value="保存更改" class="button"/>
+				</form>
 			</div>
 		</div>
 	</body>

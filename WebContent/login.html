@@ -72,12 +72,12 @@
 		<div class="main">
 			<div class="title"><strong>在线考题系统</strong></div>
 			<div class="login_body">
-				<from action="../student/team.html" method="post">
+				<form action="./student/teamLeader.html" method="">
 					<table>
 						<tr><td>用户名:</td><td><input type="text" name="userName" placeholder="请输入用户名"></td></tr>
 						<tr><td>密&emsp;码:</td><td><input type="password" name="password" placeholder="请输入密码"></td></tr>
-						<!--<tr><td>普通用户<input type="radio" value="user" name="person" checked="checked"/></td><td>管理员<input type="radio" value="admin"name="person"/></td></tr>-->
-						<tr><td colspan="2">账户类型：
+						<tr><td colspan="2">普通用户<input type="radio" value="user" name="person" checked="checked"/>  管理员<input type="radio" value="admin"name="person"/>  临时账户<input type="radio" value="linshi"name="person"/></td></tr>
+						<!--<tr><td colspan="2">账户类型：
 							<select>
 								<option selected="selected">队员</option>
 								<option>队长</option>
@@ -85,10 +85,10 @@
 								<option>面试人员</option>
 								<option>临时账户</option>
 								<option>管理员</option>
-							</select></td></tr>
-						<tr class="button"><td colspan="2"><input type="submit" value="登录"/><!--</td><td><input type="reset" value="   重置   "/></td>--></tr>
+							</select></td></tr>-->
+						<tr class="button"><td colspan="2"><input type="submit" value="登录" id="login"/><!--</td><td><input type="reset" value="   重置   "/></td>--></tr>
 					</table>
-				</from>
+				</form>
 				<div class="bottom"><a class="a1" href="register.html">立即注册</a><!--<a class="a2" href="register.html">临时账户</a>--></div>
 			</div>
 		</div>

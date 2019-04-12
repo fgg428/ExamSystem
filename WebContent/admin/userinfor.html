@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>个人信息页面</title>
+		<title>用户信息页面</title>
 		<style type="text/css">
 			*{
 				margin: 0;
@@ -13,7 +13,7 @@
 				margin-bottom: 30px;
 			}
 			body{
-				background-image: url(img/background_02.jpg);
+				background-image: url(../img/background_02.jpg);
 				width: 100%;
 				height: 100%;
 			}
@@ -39,7 +39,7 @@
 				color: black;
 				text-decoration: none;
 			}
-			.infor_update a{
+			.delete_user a{
 				float: left;
 				font-size: 18px;
 				color: black;
@@ -52,7 +52,7 @@
 	</head>
 	<body>
 		<div class="main">
-			<div><h1>个人信息页面</h1></div>
+			<div><h1>用户信息页面</h1></div>
 			<div class="infor_body">
 
 					<table border="1" cellpadding="0" cellspacing="0">
@@ -77,8 +77,8 @@
 							<td>队名：<span id="Enddate">天天向上</span></td>
 						</tr>
 					</table>
-				<div class="infor_update"><a href="userUpdateInfor.html">信息修改</a></div>
-				<div class="password_update"><a href="forget_password.html">密码重置</a></div>
+				<div class="delete_user"><a href="#">删除用户</a></div>	
+				<div class="password_update"><a href="updateUserPassword.html">用户密码重置</a></div>
 			</div>
 		</div>
 	</body>

@@ -9,7 +9,7 @@
 				padding: 0;
 			}
 			body{
-				background-image: url(img/background_02.jpg);
+				background-image: url(../img/background_02.jpg);
 				width: 100%;
 				height: 100%;
 			}
@@ -21,15 +21,15 @@
 				text-align: center;
 				margin: auto;
 			}
-			.forget_body{
+			.add_body{
 				width: 340px;
-				height: 270px;
+				height: 200px;
 				font-size: 18px;
 				border: 1px solid rgba(99,99,99,0.5);
 				margin: auto;
 				text-align: left;
 			}
-			.forget_body input{
+			.add_body input{
 				font-size: 15px;
 				padding-top: 3px;
 				padding-bottom: 2px;
@@ -41,15 +41,14 @@
 	</head>
 	<body>
 		<div class="body">
-			<div><h2>个人密码重置</h2></div>
-				<div  class="forget_body">
+			<div><h2>添加临时账户</h2></div>
+				<div  class="add_body">
 					<form action="" method="post">
 						<table cellspacing="20px">
-							<tr><td>用户名:</td><td><input type="text" name="userName" placeholder="请输入用户名"></td></tr>
-							<tr><td>原始密码:</td><td><input type="password" name="old_password" placeholder="请输入原密码"></td></tr>
+							<tr><td>用户名:</td><td><input type="password" name="userName" placeholder="请输入用户名"></td></tr>
 							<tr><td>新密码:</td><td><input type="password" name="password" placeholder="请输入新密码"></td></tr>
 							<tr><td>确认新密码:</td><td><input type="password" name="password" placeholder="再次输入新密码"></td></tr>
-							<tr class="button"><td colspan="2"><input type="submit" value="确认修改"/></tr>
+							<tr class="button"><td colspan="2"><input type="submit" value="确认添加"/></tr>
 						</table>
 					</form>
 					<span></span>

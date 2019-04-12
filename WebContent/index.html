@@ -10,20 +10,36 @@
     <!-- Bootstrap -->
     <link href="./css/bootstrap.min.css" rel="stylesheet">
 	<style type="text/css">
+	.my{
+		width: 30%;
+		height: 50%;
+		margin-left: 20%;
+	}
 	</style>
+	<script type="text/javascript">
+		function clickMe(){
+			//$('#myModal').modal({    backdrop:true,    keyboard:true,    show:true});
+			$('#myModal').modal('toggle')
+		}
+		
+	</script>
   </head>
   <body>
-    <h1>你好，世界！</h1>
-<!-- Single button -->
-<div class="btn-group">
-  <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    欢迎用户:<span id="userName" >Tomi</span> <span class="caret" ></span>
-  </button>
-  <ul class="dropdown-menu ">
-    <li><a href="#">Action</a></li>
-    <li><a href="#" ">Another action</a></li>
-  </ul>
-</div>
+  	<a class="btn" data-toggle="modal" href="#myModal"  data-keyboard="true" data-backdrop="false">点击我</a>
+    <div class="modal my" id="myModal">  
+    	<div class="modal-header">    
+    		<a class="close" data-dismiss="modal">×</a>    
+    		<h3>密码重置</h3>  </div>  
+	    		<div class="modal-body">    
+	    			<form>
+	    				输入重置后的密码：<input type="text" name="password"/>
+	    			</form>  
+	    		</div>  
+    			<div class="modal-footer">    
+    				<a href="#" class="btn">关闭</a>    
+    				<a href="person_information.html" class="btn btn-primary">保存更新</a>  
+    			</div>
+    </div>
     <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
     <script src="./js/jquery.min.js"></script>
     <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
